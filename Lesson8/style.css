@@ -1,0 +1,7 @@
+body{
+    background-color: yellow;
+    background-image: url(picture.jfif);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: fixed;
+}
