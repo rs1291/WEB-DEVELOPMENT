@@ -1,0 +1,16 @@
+*{
+    text-align: center;
+    font-family: monospace;
+}
+
+#text{
+    text-shadow: 2px 2px 1px rgba(213, 14, 14, 0.267)
+}
+
+#box{
+    box-shadow: 9px 9px 9px 5px #301934
+}
+
+#indent{
+    text-indent: 50%;
+}
