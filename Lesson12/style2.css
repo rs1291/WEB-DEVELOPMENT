@@ -1,0 +1,16 @@
+div {
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+div.first {
+    opacity: 10%;
+}
+
+div.second {
+    opacity: 30%;
+}
+
+div.third {
+    opacity: 60%;
+}
