@@ -1,0 +1,14 @@
+.box1{
+    background-color: white;
+    padding: 60px;
+    border: 10px solid green;
+    margin: 60px 60px;
+    float:left;
+}
+.box2{
+    background-color: white;
+    padding: 60px;
+    border: 10px solid yellow;
+    margin: 60px 60px;
+    float: right;
+}
