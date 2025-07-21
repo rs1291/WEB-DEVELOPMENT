@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>boostrap example</title>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>carousel example</h2>
+            <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicator">
+                    <li data-target="#mycarousel" data-slide-to="o "class="active"></li>
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                    <li data-target="#mycarousel" data-slide-to="3"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="pic.jpg" alt="Image 1">
+                    </div>
+
+                    <div class="item">
+                        <img src="pic1.jpg" alt="Image 2">
+                    </div>
+
+                    <div class="item">
+                        <img src="pic2.jpg" alt="Penguin">
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
