@@ -1,0 +1,13 @@
+var str = "AmAzInG"
+    document.write(str.toUpperCase());
+    document.write("<br>");
+    document.write(str.toLowerCase());
+    document.write("<br>");
+    document.write(str.startsWith('i'));
+    document.write("<br>");
+
+
+    var str1 = "I learnt about Methods";
+    var patt = new RegExp("about");
+    var res = patt.test(str1); 
+    document.write(res);
