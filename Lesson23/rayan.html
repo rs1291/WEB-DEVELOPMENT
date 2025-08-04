@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Example</title>
+    </head>
+    
+    <body>
+        <h2>JavaScript Array Example</h2>
+    
+        <p id="arrayDisplay">Array: </p>
+    
+        <input type="number" id="numInput" placeholder="Enter a number">
+        <button onclick="addToArray()">Add to Array</button>
+        <script>
+            let numbers = [10, 20, 30, 40];
+
+                function displayArray() {
+                    document.getElementById("arrayDisplay").innerText =
+                        "Array: " + numbers.join(", ");
+                }
+
+                function addToArray() {
+                    let newNum = document.getElementById("numInput").value;
+                    if (newNum !== "") {
+                        numbers.push(Number(newNum)); 
+                        displayArray();
+                        document.getElementById("numInput").value = ""; 
+                    }
+                }
+
+        </script>
+    </body>
+</html>

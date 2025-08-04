@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>REAL TIME VALIDATION USING JS</h1>
+    <hr>
+    <form id="loginForm" onsubmit="validate(event)">
+        <fieldset>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            
+            <div>
+                <label for="password">Password:</label>
+                <!-- minlength attribute ensures the password is at least 8 characters long -->
+                <input type="password" id="password" name="password" minlength="8">
+            </div>
+            
+            
+            <div>
+                <label for="age">Age:</label>
+                
+                <input type="number" id="age" name="age" min="12" max="50">
+            </div>
+            
+            
+            <button type="submit">Login</button>
+
+        </fieldset>
+    </form>
+    <div id="message"></div>
+    <script>
+        function validate(e) {
+                e.preventDefault();
+
+                const email = document.getElementById('email').value;
+                const pass = document.getElementById('password').value;
+                const age = document.getElementById('age').value;
+                const msgBox = document.getElementById('message');
+            }
+            let message = '';
+                if (email === '') {
+                    message = 'Please enter an email.';
+                    msgBox.style.color = 'red';
+                } else if (pass === '') {
+                    message = 'Password must be at least 8 characters.';
+                    msgBox.style.color = 'red';
+                } else if (age === '') {
+                    message = 'Age must be between 12 and 50.';
+                    msgBox.style.color = 'red';
+                } else {
+                    message = 'Login successful!';
+                    msgBox.style.color = 'green';
+                }
+
+                msgBox.innerText = message;
+
+    </script>
+</body>
+
+</html>
