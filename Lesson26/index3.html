@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Class Inheritance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #007BFF;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .description {
+            max-width: 700px;
+            margin: auto;
+            font-style: italic;
+            color: #555;
+        }
+
+        .output {
+            background: #fff;
+            margin: 15px auto;
+            padding: 12px;
+            width: 60%;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>JavaScript Class Inheritance</h2>
+    <p class="description">Use the <strong>extends</strong> keyword to inherit all methods from another class.</p>
+    <p class="description">Use the <strong>super</strong> method to call the parent's constructor function.</p>
+
+    <p id="details" class="output"></p>
+
+    <script>
+        class Car {
+            constructor(brand) {
+                this.carname = brand;
+            }
+            present() {
+                return 'I have a ' + this.carname;
+            }
+        }
+
+        class Model extends Car {
+            constructor(brand, mod) {
+                super(brand);
+                this.model = mod;
+            }
+            show() {
+                return this.present() + ', it is a ' + this.model;
+            }
+        }
+
+        let myCar = new Model("Ford", "Mustang");
+        document.getElementById("details").innerHTML = myCar.show();
+    </script>
+</body>
+
+</html>
