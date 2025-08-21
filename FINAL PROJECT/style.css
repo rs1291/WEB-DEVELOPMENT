@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    font-family: "Ballo Tamma 2", cursive;
+}
+
+.m-heading {
+    font-family: "Robot Slab", serif ;
+}
+
+.navigation-link {
+    border: 2px solid transparent;
+}
+
+.navigation-link:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #f5ba09;
+    transition: 0.5s ease;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('1.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_row h1 {
+    font-size: 5rem;
+}
+
+.main_row img {
+    width: auto;
+    height: 100vh;
+}
